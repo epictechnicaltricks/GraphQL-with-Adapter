@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:text="NO RESULT"
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:listitem="@layout/custom"
+
+        />
+
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/call"
+        android:text="CALL GRAPH QL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/c_Code_value"
+        android:hint="country code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+
+        android:layout_margin="10dp"
+        android:id="@+id/getcode"
+        android:text="CALL BY CODE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+</LinearLayout>
